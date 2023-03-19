@@ -4,13 +4,11 @@ import org.testng.annotations.Test;
 
 import utility.DriverManager;
 
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 
 public class InitialCases {
@@ -45,9 +43,9 @@ public class InitialCases {
   @Test
   public void valueCheck2() throws InterruptedException
   {
-  WebElement inputForm = driver.findElement(By.xpath("//*[@id='collapsibleNavbar']/ul/li[2]/a"));
-  inputForm.click();
-  Thread.sleep(2000);
+ // WebElement inputForm = driver.findElement(By.xpath("//*[@id='collapsibleNavbar']/ul/li[2]/a"));
+ // inputForm.click();
+  //Thread.sleep(2000);
   WebElement textbox = driver.findElement(By.id("value-a"));
   textbox.sendKeys("4");
   WebElement textbox1 = driver.findElement(By.id("value-b"));
